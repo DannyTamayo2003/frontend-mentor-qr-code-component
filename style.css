@@ -1,0 +1,70 @@
+:root {
+    /*card*/
+    --white: hsl(0, 0%, 100%);
+
+    /*colore di sfondo*/
+    --slate-300: hsl(212, 45%, 89%);
+
+    /*colore secondario del paragrafo*/
+    --slate-500: hsl(216, 15%, 48%);
+
+    /*colore del h1*/
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {/*body*/
+    background-color: var(--slate-300);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    /*asse x */
+    justify-content: center;
+    /*asse y */
+    align-items: center;
+
+}
+
+#card {/*card*/
+    background-color: var(--white);
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#info {/*contenitore di titolo e descrizione*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+#card #title {/*titolo*/
+    color: var(--slate-900);
+    font-size: 11px;
+}
+
+#card #description {/*descrizione*/
+    color: var(--slate-500);
+    font-size: 15px;
+}
+
+#card img {/*immagine*/
+    width: 100%;
+    border-radius: 10px;
+}
